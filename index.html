@@ -13,31 +13,28 @@
 <body>
 
     <!--Nav Section-->
-
     <div class="Nav-bar">
         <h3>ATHNAN</h3>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Gellary</a></li>
-                <li><a href="#">Project</a></li>
-                <li><a href="#">Contect</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
 
     <!--Header Section-->
-
-    <div class="header">
+    <div class="header" id="home">
         <h1>Janzeer Athnan</h1>
-        <p>Softwear Engineer and Web Developer.</p>
+        <p>Software Engineer and Web Developer.</p>
     </div>
 
     <!--About Section-->
-
-    <div class="About">
+    <div class="About" id="about">
         <h1>About</h1>
         <p>Hello, I'm Janzeer Athnan, a passionate software engineer and web developer with a strong focus on creating
             efficient, user-friendly applications. I specialize in developing responsive websites using HTML, CSS, and
@@ -53,99 +50,93 @@
             solutions that stand the test of time.</p>
     </div>
 
-    <!--Skills-->
-
-    <div class="skills">
+    <!--Skills Section-->
+    <div class="skills" id="skills">
         <h1>Skills</h1>
         <div class="skills_list">
-        <p>Python Programming</p>
-        <p>My SQL</p>
-        <p>HTML5 and CSS</p>
-        <p>JavaScript</p>
-        <p>PHP</p>
-        <p>PhotoShop</p>
-    </div>
-    </div>
-        
-    <!--gellary Section-->
-
-    <div class="gallery">
-        <h1>Gallery</h1>
-        <div class="gallery-container">
-            <img src="image/image1.jpg" alt="#">
-            <img src="image/image2.jpg" alt="#">
-            <img src="image/image3.jpg" alt="#">
-            <img src="image/image4.jpg" alt="#">
+            <p>C# </p>
+            <p>Python</p>
+            <p>MySQL</p>
+            <p>SQL</p>
+            <p>HTML5 and CSS</p>
+            <p>JavaScript</p>
+            <p>PHP</p>
+            <p>PhotoShop</p>
         </div>
     </div>
 
-    <!--Project Section-->
 
-    <div class="projects">
+    <!--Projects Section-->
+    <div class="projects" id="projects">
         <h1>My Projects</h1>
         <div class="project-container">
+            <div class="project">
+                <img src="image/Student_report.jpg" alt="Project 1 Image">
+                <div class="project-info">
+                    <h3>Student Report Card System</h3>
+                    <p>Develope Report Card System Using HTML,Css,javaScript and php.</p>
+                    <button id="project_btn">
+                        <a target="_blank" href="https://athnan.neocities.org/personal%20biography/">View Project</a>
+                    </button>
+                </div>
+            </div>
+            <div class="project">
+                <img src="image/login.png" alt="Project 1 Image">
+                <div class="project-info">
+                    <h3>Mini Login Page.</h3>
+                    <p>Create Login Page Page Using HTML and CSS.</p>
+                    <button id="project_btn">
+                        <a target="_blank" href="https://loginpage-mocha.vercel.app/">View Project</a>
+                    </button>
+                </div>
+            </div>
             <div class="project">
                 <img src="image/Google.png" alt="Project 1 Image">
                 <div class="project-info">
                     <h3>Google Page.</h3>
                     <p>Create Google Clone Page Using HTML and CSS.</p>
-                    <button id="project_btn"><a id="project_btn" target="_blank" href="https://athnan.neocities.org/personal%20biography/">View Project</a></button>
-                </div>
-            </div>
-            <div class="project">
-                <img src="image/login.png" alt="Project 2 Image">
-                <div class="project-info">
-                    <h3>Login Page</h3>
-                    <p>Creating Login Page Using HTML and CSS.</p>
-                    <button id="project_btn"><a id="project_btn" target="_blank" href="https://athnan.neocities.org/personal%20biography/">View Project</a></button>
-                </div>
-            </div>
-            <div class="project">
-                <img src="image/image3.jpg" alt="Project 3 Image">
-                <div class="project-info">
-                    <h3>Portfolio</h3>
-                    <p>A responsive portfolio website built using HTML and CSS..</p>
-                    <button id="project_btn"><a id="project_btn" target="_blank" href="https://athnan.neocities.org/personal%20biography/">View Project</a></button>
+                    <button id="project_btn">
+                        <a target="_blank" href="https://athnan.neocities.org/personal%20biography/">View Project</a>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-   
 
-    <!--Contect Section-->
+        <!--Gallery Section-->
+        <div class="gallery" id="gallery">
+            <h1>Gallery</h1>
+            <div class="gallery-container">
+                <img src="image/image1.jpg" alt="Image 1">
+                <img src="image/image2.jpg" alt="Image 2">
+                <img src="image/image3.jpg" alt="Image 3">
+                <img src="image/image4.jpg" alt="Image 4">
+            </div>
+        </div>
+    
 
-    <div class="contact">
+    <!--Contact Section-->
+    <div class="contact" id="contact">
         <h3>Hire Me</h3>
-        <form action="contact" method="POST">
+        <form action="contact.php" method="POST">
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username"><br>
-
+            <input type="text" id="username" name="username" required><br>
+    
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br>
-
+            <input type="email" id="email" name="email" required><br>
+    
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password"><br>
-
+            <input type="password" id="password" name="password" required><br>
+    
             <label for="contact">Contact:</label>
             <input type="tel" id="contact" name="contact"><br>
-
-            <button>Submit</button>
+    
+            <button type="submit">Submit</button>
         </form>
     </div>
-
-     <!--Social Media-->
-     <div class="SoicalMedia">
-     <ul>
-         <li><a target="_blank" href="https://www.instagram.com/baner_kotcha?igsh=aTE0amsxdnZiM3Y1"><img src="https://img.icons8.com/?size=100&id=84884&format=png&color=000000" alt="Instagram"></a></li>
-         <li><a
-             target="_blank" href="https://www.linkedin.com/in/ath-nan-006411222?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="https://img.icons8.com/?size=100&id=84888&format=png&color=000000" alt="Linkedin"></a>
-         </li>
-
-     </ul>
- </div>
+    
 
     <!--Footer-->
-
     <footer>
         <div class="copyrights">
             <p>&copy; 2024 Janzeer Athnan | All Rights Reserved.</p>
